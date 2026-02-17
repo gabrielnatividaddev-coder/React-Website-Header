@@ -1,9 +1,13 @@
 .innerfeature {
    background-color: 'red';
-    padding-left: 200px;
-    padding-right: 200px;
 }
 .innerdivfeature{
     background-color: 'red';
     color: 'red';
+    width: 80%;
+}
+.outerdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

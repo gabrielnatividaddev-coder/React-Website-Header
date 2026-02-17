@@ -1,0 +1,10 @@
+.helpinnerdiv{
+    background-color: 'red';
+    color: 'red';
+    width: 80%;
+}
+.outerdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

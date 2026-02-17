@@ -1,7 +1,13 @@
 .inner {
     text-align: center;
 }
+.outerdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .innerdiv{
-     padding-left: 200px;
-    padding-right: 200px;
+     /* padding-left: 200px;
+    padding-right: 200px; */
+    width: 80%;
 }

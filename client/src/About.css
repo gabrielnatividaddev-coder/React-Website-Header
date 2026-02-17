@@ -2,9 +2,12 @@
     text-indent: 50px;
   text-align: justify;
   letter-spacing: 5px;
-   padding-left: 200px;
-    padding-right: 200px;
 }
 .aboutdiv {
-    
+  width: 80%;  
+}
+.outerdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
