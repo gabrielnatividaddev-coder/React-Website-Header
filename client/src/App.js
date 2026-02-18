@@ -8,7 +8,7 @@ import Home from './Home/Home.js';
 import Features from './Feature/Features.js';
 import About from './About/About.js';
 import Help from './Help/Help.js';
-import Footer from './footer.component.jsx';
+import Footer from './Footer/footer.component.jsx';
 
 class App extends React.Component {
   render(){
