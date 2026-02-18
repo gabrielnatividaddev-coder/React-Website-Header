@@ -3,11 +3,13 @@ import './App.css';
 import '@mantine/core/styles.css';
 import { Switch, Route, Navigate, Routes  } from 'react-router-dom';
 import React from 'react';
-import Header from './Header.js';
-import Home from './Home.js';
-import Features from './Features.js';
-import About from './About.js';
-import Help from './Help.js';
+import Header from './Header/Header.js';
+import Home from './Home/Home.js';
+import Features from './Feature/Features.js';
+import About from './About/About.js';
+import Help from './Help/Help.js';
+import Footer from './footer.component.jsx';
+
 class App extends React.Component {
   render(){
     return <div className="App">
@@ -18,6 +20,7 @@ class App extends React.Component {
             <Route path='/about' element={<About/>} />
             <Route exact path='/links' element={<Help/>} />
           </Routes >
+          <Footer/>
           </div>
   }
 }
