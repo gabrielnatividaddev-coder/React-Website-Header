@@ -14,11 +14,11 @@ const theme = createTheme({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <MantineProvider theme={theme}>
-    <BrowserRouter>
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-  </BrowserRouter>
+      <BrowserRouter>
+      <React.StrictMode>
+      <App />
+      </React.StrictMode>
+    </BrowserRouter>
   </MantineProvider>
 );
 
