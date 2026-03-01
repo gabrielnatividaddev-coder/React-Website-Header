@@ -36,7 +36,7 @@ const Header = () => {
             onClick={toggleDrawer}
             hiddenFrom="sm"
             aria-label="Toggle navigation"
-            p={'5px'}
+            mr={'20px'}
           />
           </div>
           <Drawer
