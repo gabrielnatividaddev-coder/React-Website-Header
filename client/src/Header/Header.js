@@ -11,11 +11,12 @@ import {
 } from '@tabler/icons-react';
 import { Button, Burger, Group, Drawer, ScrollArea, Divider, UnstyledButton,Center, Box, Collapse } from '@mantine/core';
 import JBDM from  '../assets/javier.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
 import { useDisclosure } from '@mantine/hooks';
 
 const Header = () => {
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
+    const {pathname} = useLocation();
     return <div><div className='headermain'>
             <div className='leftsidediv'>
             <img className='setimage' height={30} src={JBDM}></img>
@@ -51,10 +52,10 @@ const Header = () => {
         <ScrollArea h="calc(100vh - 80px" mx="-md">
           <Divider my="sm"/>
                 <Group className='divideritems'>
-                <Link to="/" className='itemdivider'>Home</Link>
-                <Link to='/features' className='itemdivider'>Features</Link>
-                <Link to='/about' className='itemdivider'>About</Link>
-                <Link to='/links' className='itemdivider'>Links</Link>
+                <Link to="/" className='itemdivider' style={{backgroundColor: pathname ==='/' ? 'lightgray': 'white'}}>Home</Link>
+                <Link to='/features' className='itemdivider' style={{backgroundColor: pathname ==='/features' ? 'lightgray': 'white'}}>Features</Link>
+                <Link to='/about' className='itemdivider' style={{backgroundColor: pathname ==='/about' ? 'lightgray': 'white'}}>About</Link>
+                <Link to='/links' className='itemdivider' style={{backgroundColor: pathname ==='/links' ? 'lightgray': 'white'}} >Links</Link>
                 </Group>
           <Divider my="sm" />
 
