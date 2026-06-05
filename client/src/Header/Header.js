@@ -43,13 +43,13 @@ const Header = () => {
           <Drawer
             opened={drawerOpened}
             onClose={closeDrawer}
-            size="100%"
+            size="50%"
             padding="md"
             title="Navigation"
             hiddenFrom="sm"
             zIndex={1000000}
           >
-        <ScrollArea h="calc(100vh - 80px" mx="-md">
+        <ScrollArea mx="-md">
           <Divider my="sm"/>
                 <Group className='divideritems'>
                 <Link to="/" className='itemdivider' style={{backgroundColor: pathname ==='/' ? 'lightgray': 'white'}}>Home</Link>
